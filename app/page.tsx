@@ -6,7 +6,7 @@ import { Testimonials } from "./src/components/testimonial";
 
 const page = () => {
   return (
-    <div className="max-w-[1920px] w-full">
+    <div className="flex flex-col justify-center items-center ">
       <Header />
       <Main />
       <Testimonials />

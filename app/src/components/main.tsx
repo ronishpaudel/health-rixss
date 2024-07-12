@@ -4,7 +4,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="bg-darkVoilet h-[100vh] flex justify-start items-center w-full text-gray-100 px-[8%]">
+    <div className="bg-darkVoilet h-[100vh] flex max-w-[1920px] w-full justify-start items-center w-full text-gray-100 px-[8%]">
       <div className=" flex flex-col gap-5 mt-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

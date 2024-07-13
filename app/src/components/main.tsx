@@ -10,7 +10,7 @@ const Main = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="font-sans font-bold text-5xl"
+          className="font-sans font-bold text-4xl md:text-5xl"
         >
           HealthRixss
         </motion.div>
@@ -18,7 +18,7 @@ const Main = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="max-w-[580px] w-full font-sans text-base"
+          className="max-w-[580px] w-full font-sans text-base md:text-lg"
         >
           Health Rixss, a pioneering force in the U.S. healthcare industry, is a
           trusted partner for organizations seeking actionable insights in the

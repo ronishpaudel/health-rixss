@@ -14,12 +14,12 @@ import {
 
 const Testimonials = () => {
   return (
-    <div className="px-[8%] max-w-[1920px] w-full py-10 bg-blue-50 flex flex-col gap-10 justify-center items-center">
+    <div className="px-[8%] max-w-[1920px] w-full py-[4%] bg-blue-50 flex flex-col gap-10 justify-center items-center">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-2xl font-sans font-bold py-4 flex justify-center max-w-[640px] text-darkVoilet w-full text-center"
+        className="text-2xl font-sans font-bold py-4 flex mb-5 justify-center max-w-[640px] text-darkVoilet w-full text-center"
       >
         Choose HealthRixss for a journey of innovation, collaboration, and
         success, transforming healthcare and beyond.

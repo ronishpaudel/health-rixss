@@ -29,7 +29,7 @@ const Main = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="bg-blue-500 hover:bg-white hover:text-slate-900 rounded font-sans font-medium w-[200px] p-3 mt-20 text-center uppercase text-gray-200"
+          className="bg-blue-500 hover:bg-white hover:text-slate-900 rounded font-sans font-medium w-[200px] p-3 mt-4 text-center uppercase text-gray-200"
         >
           Get Started
         </motion.button>

@@ -196,7 +196,7 @@ const Page = () => {
               </div>
             </ScrollAnimation>
             <ScrollAnimation>
-              <div className="text-base text-gray-800 font-sans ">
+              <div className="text-base text-gray-800 font-sans mb-2">
                 <div className="text-xl mb-3 text-gray-800 font-sans font-bold">
                   Consulting and Advisory Services
                 </div>

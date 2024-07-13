@@ -14,7 +14,17 @@ import {
 
 const Testimonials = () => {
   return (
-    <div className="px-[8%] max-w-[1920px] w-full py-10 bg-blue-50">
+    <div className="px-[8%] max-w-[1920px] w-full py-10 bg-blue-50 flex flex-col gap-10 justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-2xl font-sans font-bold py-4 flex justify-center max-w-[640px] text-darkVoilet w-full text-center"
+      >
+        Choose HealthRixss for a journey of innovation, collaboration, and
+        success, transforming healthcare and beyond.
+      </motion.div>
+
       <motion.div
         variants={container}
         initial="hidden"
@@ -61,6 +71,32 @@ const Testimonials = () => {
               value addition and simplicity.`}
           icon={<Headphones size={40} />}
         />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-2xl font-sans font-bold pt-5 flex justify-center text-darkVoilet max-w-[640px] w-full text-center"
+      >
+        "We are looking for you as our happy client"
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col gap-5 justify-center max-w-[640px] w-full text-center"
+      >
+        <div className="text-xl font-sans text-darkVoilet">
+          We are dedicated to unraveling the intricate world of healthcare,
+          turning complexity into clarity, and enabling informed decisions that
+          drive efficiency, innovation, and success.
+        </div>
+        <div className="flex flex-col gap-2 pt-4 mb-4">
+          <div className="text-lg text-darkVoilet font-bold">Xyz Kumar</div>
+          <div className="text-base text-darkVoilet font-medium ">
+            Ceo/Founder
+          </div>
+        </div>
       </motion.div>
     </div>
   );

@@ -64,7 +64,7 @@ const Page: React.FC = () => {
           <div className="mt-4 font-sans text-base font-semibold">
             Contact us for a quote, help, or to join the team.
           </div>
-          <div className="flex gap-4 mt-9 justify-center">
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-9 justify-center">
             <div className="flex flex-col gap-2 justify-center items-center">
               <div>
                 <Map size={35} />
@@ -122,7 +122,7 @@ const Page: React.FC = () => {
           <div className="text-lg font-bold">
             Name<span className="text-red-500">*</span>
           </div>
-          <div className="flex gap-10 justify-between">
+          <div className="flex gap-4 justify-between">
             <input
               className="p-4 rounded border border-gray-800 md:w-[50%] w-full"
               placeholder="First Name"

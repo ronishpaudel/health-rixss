@@ -4,6 +4,8 @@ import { Main } from "./src/components/main";
 import { Footer } from "./src/components/footer";
 import { Testimonials } from "./src/components/testimonial";
 import { ClientTestimonials } from "./src/components/client";
+import FooterBanner from "./src/components/footerBanner";
+import ScrollToTopButton from "./src/components/scrollTopButton";
 
 const page = () => {
   return (
@@ -13,6 +15,8 @@ const page = () => {
       <Testimonials />
       <ClientTestimonials />
       <Footer />
+      {/* <FooterBanner /> */}
+      <ScrollToTopButton />
     </div>
   );
 };

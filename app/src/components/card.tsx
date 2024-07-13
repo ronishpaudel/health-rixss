@@ -15,7 +15,7 @@ const Card = ({
   return (
     <motion.div
       variants={item}
-      className="min-h-[300px] max-w-[480px] bg-slate-50 w-full flex flex-col gap-5 items-start justify-center p-6 rounded-lg border hover:shadow-lg cursor-pointer border-slate-300"
+      className="md:h-[450px] h-full max-w-[480px] bg-slate-50 w-full flex flex-col gap-5 items-start justify-center p-6 rounded-lg border hover:shadow-lg cursor-pointer border-slate-300"
     >
       <div className="w-[200px] h-[50px]">{icon}</div>
       <div className="mt-2 flex flex-col gap-2">

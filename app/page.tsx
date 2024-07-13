@@ -3,6 +3,7 @@ import { Header } from "./src/components/header";
 import { Main } from "./src/components/main";
 import { Footer } from "./src/components/footer";
 import { Testimonials } from "./src/components/testimonial";
+import { ClientTestimonials } from "./src/components/client";
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
       <Header />
       <Main />
       <Testimonials />
+      <ClientTestimonials />
       <Footer />
     </div>
   );

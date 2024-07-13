@@ -61,7 +61,7 @@ const Page: React.FC = () => {
           <div className="text-orange-400 text-3xl font-sans font-bold mt-10">
             Contact Us
           </div>
-          <div className="mt-4 font-sans text-base font-semibold">
+          <div className="mt-4 font-sans text-base text-center font-semibold">
             Contact us for a quote, help, or to join the team.
           </div>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-9 justify-center">

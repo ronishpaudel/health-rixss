@@ -184,9 +184,9 @@ const Page: React.FC = () => {
           )}
           <br />
         </form>
-        <Footer />
-        <ScrollToTopButton />
       </div>
+      <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };

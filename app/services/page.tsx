@@ -19,11 +19,10 @@ const Page = () => {
             </ScrollAnimation>
             <ScrollAnimation>
               <div className="text-base text-gray-800 font-sans ">
-                <div className="text-xl mb-3 text-gray-800 font-sans font-bold">
+                <div className="text-xl mb-2 text-gray-800 font-sans font-bold">
                   Who We Serve
                 </div>
-
-                <ul className="list-disc ml-5 text-base">
+                <ul className="list-disc ml-3 text-base">
                   <li>Clinical and Medical Groups</li>
                   <li>Private Health Insurance Companies</li>
                   <li>Hospital Systems</li>

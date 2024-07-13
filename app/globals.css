@@ -46,3 +46,20 @@
   font-size: 24px;
   color: #fff;
 }
+
+.custom-bullet {
+  list-style: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-bullet::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(89, 89, 177);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}

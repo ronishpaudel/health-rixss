@@ -31,7 +31,6 @@ const Page = () => {
                 </ul>
               </div>
             </ScrollAnimation>
-            <br />
             <ScrollAnimation>
               <div className="text-2xl text-yellow-500 font-sans font-bold mt-4">
                 What We Do

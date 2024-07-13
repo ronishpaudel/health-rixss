@@ -1,8 +1,8 @@
+"use client";
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { MapPin } from "lucide-react"; // Example Lucide React icon
 
 const position: [number, number] = [33.1748, -96.6745]; // Latitude and Longitude for the address
 
@@ -26,21 +26,40 @@ const customIcon = new L.Icon({
   popupAnchor: [0, -30],
 });
 
+const DynamicMapContainer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.MapContainer),
+  { ssr: false }
+);
+const DynamicTileLayer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.TileLayer),
+  { ssr: false }
+);
+const DynamicMarker = dynamic(
+  () => import("react-leaflet").then((mod) => mod.Marker),
+  { ssr: false }
+);
+const DynamicPopup = dynamic(
+  () => import("react-leaflet").then((mod) => mod.Popup),
+  { ssr: false }
+);
+
 const LeafletMapComponent: React.FC = () => {
   return (
-    <MapContainer
+    <DynamicMapContainer
       center={position}
       zoom={15}
       style={{ height: "400px", width: "100%" }}
     >
-      <TileLayer
+      <DynamicTileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={position} icon={customIcon}>
-        <Popup>4100 ELDORADO PKWY, STE 100-266, MCKINNEY TX 75070</Popup>
-      </Marker>
-    </MapContainer>
+      <DynamicMarker position={position} icon={customIcon}>
+        <DynamicPopup>
+          4100 ELDORADO PKWY, STE 100-266, MCKINNEY TX 75070
+        </DynamicPopup>
+      </DynamicMarker>
+    </DynamicMapContainer>
   );
 };
 

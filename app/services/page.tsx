@@ -22,12 +22,12 @@ const Page = () => {
                 <div className="text-xl mb-2 text-gray-800 font-sans font-bold">
                   Who We Serve
                 </div>
-                <ul className="list-disc ml-3 text-base">
+                <ul className="list-disc ml-5 text-base">
                   <li>Clinical and Medical Groups</li>
                   <li>Private Health Insurance Companies</li>
                   <li>Hospital Systems</li>
-                  <li>Service Organizations</li>
                   <li>Healthcare Payers</li>
+                  <li>Service Organizations</li>
                 </ul>
               </div>
             </ScrollAnimation>

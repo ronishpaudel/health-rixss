@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className=" flex flex-col items-center space-y-2 bg-white text-darkVoilet">
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
         <span className="underline-effect" onClick={() => push("/")}>
-          home
+          Home
         </span>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">

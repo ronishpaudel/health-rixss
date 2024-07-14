@@ -16,8 +16,8 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className="px-[8%] max-w-[1920px] w-full bg-darkVoilet py-8">
-        <div className="text-gray-100 flex justify-between items-center w-full">
+      <div className="px-[8%] max-w-[1920px] w-full bg-slate-50 py-8 border-b shadow-lg">
+        <div className="text-gray-950 flex justify-between items-center w-full">
           <motion.div
             className="cursor-pointer"
             onClick={() => router.push("/")}
@@ -39,8 +39,8 @@ const Header: React.FC = () => {
           </div>
 
           <div className="md:block hidden">
-            <motion.div className="flex gap-4 items-center font-sans font-medium text-white">
-              <div className="relative cursor-pointer hover:text-gray-200">
+            <motion.div className="flex gap-3 items-center font-sans font-medium md:font-semibold text-[16px] md:text-lg text-slate-800">
+              <div className="relative cursor-pointer hover:text-slate-700">
                 <span
                   className="underline-effect"
                   onClick={() => router.push("/about-us")}
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
                   About
                 </span>
               </div>
-              <div className="relative cursor-pointer hover:text-gray-200">
+              <div className="relative cursor-pointer hover:text-slate-700">
                 <span
                   className="underline-effect"
                   onClick={() => router.push("/services")}
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
                   Services
                 </span>
               </div>
-              <div className="relative cursor-pointer hover:text-gray-200">
+              <div className="relative cursor-pointer hover:text-slate-700">
                 <span
                   className="underline-effect"
                   onClick={() => router.push("/our-products")}
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                   Our Products
                 </span>
               </div>
-              <div className="relative cursor-pointer hover:text-gray-200">
+              <div className="relative cursor-pointer hover:text-slate-700">
                 <span
                   className="underline-effect"
                   onClick={() => router.push("/our-team")}
@@ -72,7 +72,15 @@ const Header: React.FC = () => {
                   Our Team
                 </span>
               </div>
-              <div className="relative cursor-pointer hover:text-gray-200">
+              <div className="relative cursor-pointer hover:text-slate-700">
+                <span
+                  className="underline-effect"
+                  onClick={() => router.push("/news-letter")}
+                >
+                  Articles
+                </span>
+              </div>
+              <div className="relative cursor-pointer hover:text-slate-700">
                 <span
                   className="underline-effect"
                   onClick={() => router.push("/contact-us")}

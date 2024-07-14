@@ -63,3 +63,14 @@
   left: 0;
   top: 0.5rem;
 }
+
+.banner-black {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.18) 0%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+}
+.banner-container {
+  background-image: url("/images/data.jpg");
+}

@@ -2,39 +2,59 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 const NavBar = () => {
-  const { push } = useRouter();
+  const router = useRouter();
   return (
     <div className=" flex flex-col items-center space-y-2 bg-white text-darkVoilet">
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span className="underline-effect" onClick={() => push("/")}>
+        <span className="underline-effect" onClick={() => router.push("/")}>
           Home
         </span>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span className="underline-effect" onClick={() => push("/about-us")}>
+        <span
+          className="underline-effect"
+          onClick={() => router.push("/about-us")}
+        >
           About
         </span>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span className="underline-effect" onClick={() => push("/services")}>
+        <span
+          className="underline-effect"
+          onClick={() => router.push("/services")}
+        >
           Services
         </span>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
         <span
           className="underline-effect"
-          onClick={() => push("/our-products")}
+          onClick={() => router.push("/our-products")}
         >
           Our Products
         </span>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span className="underline-effect" onClick={() => push("/our-team")}>
+        <span
+          className="underline-effect"
+          onClick={() => router.push("/our-team")}
+        >
           Our Team
         </span>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span className="underline-effect" onClick={() => push("/contact-us")}>
+        <span
+          className="underline-effect"
+          onClick={() => router.push("/news-letter")}
+        >
+          Articles
+        </span>
+      </div>
+      <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
+        <span
+          className="underline-effect"
+          onClick={() => router.push("/contact-us")}
+        >
           Contact
         </span>
       </div>

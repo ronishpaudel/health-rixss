@@ -6,7 +6,7 @@ import ScrollToTopButton from "../src/components/scrollTopButton";
 
 const teamMembers = [
   {
-    imageSrc: "/images/batman.png",
+    imageSrc: "/team/jay.jpg",
     name: "Jay Baker - CEO",
     description: `Jay is a strategic leader in healthcare with deep 
     expertise in Medicare Advantage, ACA, and Medicaid. 
@@ -16,7 +16,7 @@ const teamMembers = [
       Jay’s career is marked by a steadfast dedication to innovation and excellence.`,
   },
   {
-    imageSrc: "/images/batman.png",
+    imageSrc: "/team/samir.jpg",
     name: "Samir Rawat - CTO",
     description: `Samir is the CTO at HealthTrixss with over 17 years 
     of healthcare IT and Data Analytics experience across various 
@@ -26,7 +26,7 @@ const teamMembers = [
        innovative technological integrations.`,
   },
   {
-    imageSrc: "/images/batman.png",
+    imageSrc: "/team/team.png",
     name: "Dr. Scott Howell, M.D., MPH & TM, CPE – Clinical Advisor",
     description: `Dr. Howell, a seasoned physician leader with over 30 years of experience in healthcare,
      has expertise in risk adjustment, quality performance, and clinical consulting across various sectors.
@@ -85,7 +85,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ imageSrc, name, description }) => {
       <img
         src={imageSrc}
         alt={name}
-        className="p-2 w-full h-[280px] object-cover object-center rounded-[10px] bg-lightgray bg-cover bg-no-repeat"
+        className="p-2 w-full h-[320px]  object-cover rounded-[10px] bg-lightgray bg-cover bg-no-repeat"
       />
       <div className="p-4 flex-grow flex flex-col justify-between">
         <div>

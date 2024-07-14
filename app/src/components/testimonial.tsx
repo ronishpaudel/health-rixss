@@ -92,9 +92,9 @@ const Testimonials = () => {
           drive efficiency, innovation, and success.
         </div>
         <div className="flex flex-col gap-2 pt-4 mb-4">
-          <div className="text-lg text-darkVoilet font-bold">Xyz Kumar</div>
-          <div className="text-base text-darkVoilet font-medium ">
-            Ceo/Founder
+          <div className="text-lg text-darkVoilet font-bold">Jay Baker</div>
+          <div className="text-base text-darkVoilet font-medium uppercase">
+            CEO/Founder
           </div>
         </div>
       </motion.div>

@@ -1,62 +1,44 @@
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+
 import React from "react";
 
 const NavBar = () => {
-  const router = useRouter();
   return (
     <div className=" flex flex-col items-center space-y-2 bg-white text-darkVoilet">
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span className="underline-effect" onClick={() => router.push("/")}>
-          Home
-        </span>
+        <Link href="/" prefetch>
+          <a className="underline-effect">Home</a>
+        </Link>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span
-          className="underline-effect"
-          onClick={() => router.push("/about-us")}
-        >
-          About
-        </span>
+        <Link href="/about-us" prefetch>
+          <a className="underline-effect">About</a>
+        </Link>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span
-          className="underline-effect"
-          onClick={() => router.push("/services")}
-        >
-          Services
-        </span>
+        <Link href="/services" prefetch>
+          <a className="underline-effect">Services</a>
+        </Link>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span
-          className="underline-effect"
-          onClick={() => router.push("/our-products")}
-        >
-          Our Products
-        </span>
+        <Link href="/our-products" prefetch>
+          <a className="underline-effect">Our Products</a>
+        </Link>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span
-          className="underline-effect"
-          onClick={() => router.push("/our-team")}
-        >
-          Our Team
-        </span>
+        <Link href="/our-team" prefetch>
+          <a className="underline-effect">Our Team</a>
+        </Link>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span
-          className="underline-effect"
-          onClick={() => router.push("/news-letter")}
-        >
-          Articles
-        </span>
+        <Link href="/news-letter" prefetch>
+          <a className="underline-effect">Articles</a>
+        </Link>
       </div>
       <div className="relative cursor-pointer hover:text-gray-200 w-full border-b border-gray-300 py-2">
-        <span
-          className="underline-effect"
-          onClick={() => router.push("/contact-us")}
-        >
-          Contact
-        </span>
+        <Link href="/contact-us" prefetch>
+          <a className="underline-effect">Contact</a>
+        </Link>
       </div>
     </div>
   );

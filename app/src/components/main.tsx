@@ -4,8 +4,13 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="bg-darkVoilet h-[90vh] flex max-w-[1920px]  justify-start items-center w-full text-gray-100 px-[8%]">
-      <div className=" flex flex-col gap-5 mt-4">
+    <div
+      className="relative h-[100vh] flex max-w-[1920px] justify-start items-center w-full text-gray-100 px-[8%] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/data.jpg')" }}
+    >
+      <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full banner-black"></div>
+
+      <div className=" flex flex-col gap-5 mt-4 relative">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

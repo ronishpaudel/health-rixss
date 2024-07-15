@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       <Header />
-      <div className="max-w-[1920px] px-[8%] w-full  bg-blue-100">
+      <div className="max-w-[1920px] px-[8%] w-full  bg-slate-100">
         <div className="flex justify-center py-[5%] flex-wrap md:flex-nowrap gap-5 ">
           <div className="flex flex-col gap-5 w-full md:w-[50%]">
             <ScrollAnimation>

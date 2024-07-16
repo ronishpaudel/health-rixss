@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   }
 
   return (
-    <>
+    <header>
       <div className="px-[8%] max-w-[1920px] w-full bg-slate-50 py-8 border-b shadow-lg">
         <div className="text-gray-950 flex justify-between items-center w-full">
           <motion.div
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
           <NavBar />
         </div>
       )}
-    </>
+    </header>
   );
 };
 

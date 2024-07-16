@@ -17,7 +17,7 @@ const page = () => {
         <Testimonials />
         <ClientTestimonials />
         <Footer />
-        {/* <FooterBanner /> */}
+        <FooterBanner />
         <ScrollToTopButton />
       </Suspense>
     </div>

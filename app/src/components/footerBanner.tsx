@@ -7,7 +7,10 @@ const FooterBanner = () => {
       © 2024 HealthTrixss LLC. All rights reserved. Designed & Developed by{" "}
       <Link
         href="https://www.ronishpaudel.com.np/"
-        className="text-orange-400 hover:text-orange-500 hover:shadow-xl"
+        className="text-orange-400 hover:text-orange-500 hover:shadow-xl hover:underline "
+        prefetch={false}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         ronishpaudel.com.np
       </Link>

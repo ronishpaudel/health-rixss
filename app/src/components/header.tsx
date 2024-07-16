@@ -15,8 +15,8 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header>
-      <div className="px-[8%] max-w-[1920px] w-full bg-slate-50 py-8 border-b shadow-lg">
+    <>
+      <header className="px-[8%] max-w-[1920px] w-full bg-slate-50 py-8 border-b shadow-lg">
         <div className="text-gray-950 flex justify-between items-center w-full">
           <motion.div
             className="cursor-pointer"
@@ -91,13 +91,13 @@ const Header: React.FC = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </header>
       {navbar && (
         <div className="mt-4 md:hidden block max-w-[1920px] w-full text-center ">
           <NavBar />
         </div>
       )}
-    </header>
+    </>
   );
 };
 

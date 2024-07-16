@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1920px] w-full flex justify-between gap-10 px-[8%] py-8 bg-blue-950 text-white md:flex-nowrap flex-wrap">
+    <footer className="max-w-[1920px] w-full flex justify-between gap-10 px-[8%] py-8 bg-blue-950 text-white md:flex-nowrap flex-wrap">
       <ScrollAnimation>
         <div className="flex flex-col gap-2">
           <div className="text-2xl font-semibold font-sans mb-4">
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
       </ScrollAnimation>
-    </div>
+    </footer>
   );
 };
 

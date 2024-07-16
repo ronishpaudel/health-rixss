@@ -4,7 +4,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div
+    <main
       className="relative h-[100vh] flex max-w-[1920px] justify-start items-center w-full text-gray-100 px-[8%] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/images/data.jpg')" }}
     >
@@ -39,7 +39,7 @@ const Main = () => {
           Get Started
         </motion.button>
       </div>
-    </div>
+    </main>
   );
 };
 
